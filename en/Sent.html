@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ENKOR-TECH</title>
+    <meta name="ENKOR" content="Página oficial de empresa de refrigeración ENKOR-TECH">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="imagenes/iconos/logo%20icono.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNav" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-01.png"></a>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNavEscondido" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-02TR.png"></a>
+        <div id="divNav">
+            <div class="elNav invisibleCelular"><a href="AboutUs.html">About us</a></div>
+            <div class="elNav invisibleCelular"><a href="OurClients.html">Our clients</a></div>
+            <div class="elNav invisibleCelular"><a href="OurServices.html">Our services</a></div>
+            <div class="elNav invisibleCelular" id="elNavActivo"><a href="Contact.html">Contact</a></div>
+            <div class="banderaIdioma"><div id="banderaTitulo">Languages</div><a href="../Contacto.html"><img src="imagenes/BanderaMexico.png"></a><a href="#"><img src="imagenes/BanderaUSA.png"></a></div>
+            <a onclick="toggleMenu()" id="elNavMenu"><img src="imagenes/iconos/BotonMenu.png"></a>
+        </div>
+    </nav>
+    <div id="fondoContacto">
+    <h1 style="width: 100%; text-align: center">Conact us</h1>
+    <div class="contenido" id="zonaContacto" style="display: inherit">
+        <h1 style=" width: 100%; text-align: center; float: left;">Email sent successfully</h1>
+        <div id="serviciosButtonDiv" style="width: 100%; float: left; display: flex; justify-content: center;">
+            <a href="Contact.html"><button id="botonServicios" style="border-radius: 20px;">
+                <h4>Send another email</h4>
+            </button></a>
+        </div>
+    </div>
+    </div>
+    <div class="biSecciones">
+        <div class="biSection imgBiSection colorQuienes tituloContacto">
+            <h1 style="color: white">Or use our contact information</h1>
+        </div>
+        <div class="biSection colorQuienes seccionMod" style="outline-style: none;">
+            <div class="imgHiddenSec modContactoHidden"><h1 style="color: white">Or use our contact information</h1></div>
+            <div>
+                <div class="servicioEx modContacto">
+                    <img class="imgSmallServicios" src="imagenes/iconos/Telefono%20blanco.png">
+                    <h3 class="tituloServicio">(656) 617-1474</h3>
+                </div>
+                <div class="servicioEx modContacto">
+                    <img class="imgSmallServicios" src="imagenes/iconos/Correo%20blanco.png">
+                    <h4 class="tituloServicio letraCorreo">servicio@enkortech.com</h4>
+                </div>
+                <div class="servicioEx modContacto">
+                    <img class="imgSmallServicios" src="imagenes/iconos/Correo%20blanco.png">
+                    <h4 class="tituloServicio letraCorreo">enkor.multiservicios@gmail.com</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="contenido">
+            <div>
+                <ul class="seccionFooter" style="float: left;">
+                    <li style="list-style-type: none;"><b>Contact us</b></li>
+                    <li>(656) 617-1474</li>
+                    <li class=" letraCorreo2">enkor.multiservicios@gmail.com</li>
+                    <li>Juárez City, Chihuahua</li><br>
+                    <li style="list-style-type: none;"><b>Other languages</b></li>
+                    <li><a href="../" style="text-decoration-color: skyblue; color: skyblue">Español</a></li>
+                </ul>
+
+                <a href="Contact.html" style="text-decoration: none; color: black;"><button id="botonMensaje">Send us a message</button></a>
+
+                <ul class="seccionFooter">
+                    <li style="list-style-type: none;"><b>What do you want to see?</b></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="OurClients.html">Our clients</a></li>
+                    <li><a href="OurServices.html">Our services</a></li>
+                    <li><a href="PrivacyPolicy.html">Privacy policy</a></li>
+                    <li><a href="../PaginaExtra/Cuenta.php">Online Store</a></li>
+                </ul>
+            </div>
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left">2025 © ALL RIGHTS RESERVED BY ENKOR-TECH</p>
+            
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left; font-size: 8px;">Images of web site extracted from www.vecteezy.com, www.pixabay.com, www.freepik.es y www.flaticon.es</p>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu(){
+            var x = document.querySelectorAll(".elNav");
+            
+            if (x[0].classList.contains('invisibleCelular')) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove('invisibleCelular');
+                }
+            } else {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.add('invisibleCelular');
+                }
+            }
+        }
+        
+        
+    </script>
+    
+</body>
+
+</html>

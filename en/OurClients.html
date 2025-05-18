@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ENKOR-TECH</title>
+    <meta name="ENKOR" content="Página oficial de empresa de refrigeración ENKOR-TECH">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="imagenes/iconos/logo%20icono.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNav" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-01.png"></a>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNavEscondido" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-02TR.png"></a>
+        <div id="divNav">
+            <div class="elNav invisibleCelular"><a href="AboutUs.html">About us</a></div>
+            <div class="elNav invisibleCelular" id="elNavActivo"><a href="OurClients.html">Our clients</a></div>
+            <div class="elNav invisibleCelular"><a href="OurServices.html">Our services</a></div>
+            <div class="elNav invisibleCelular"><a href="Contact.html">Contact</a></div>
+            <div class="banderaIdioma"><div id="banderaTitulo">Languages</div><a href="../NuestrosClientes.html"><img src="imagenes/BanderaMexico.png"></a><a href="#"><img src="imagenes/BanderaUSA.png"></a></div>
+            <a onclick="toggleMenu()" id="elNavMenu"><img src="imagenes/iconos/BotonMenu.png"></a>
+        </div>
+    </nav>
+    <div class="contenido" style="margin-bottom: 30px;">
+        <h1 style="text-align: center; padding-top: 15px;">Our clients</h1>
+        <p style="text-align: center">
+            ENKOR-TECH has worked with more than 20 companies to provide services in cooling systems throughout the whole country.
+        </p>
+        <p style="text-align: center">
+            Our client, who are located in places such as Tijuana, Mexicali, Querétaro, and Guadalajara, utilize several different brands of cooling machinery on which our employees are trained to manage. Here we can observe a great variety of brands our clients commonly use:
+        </p>
+        <div style="width: 100%; display: flex; justify-content: center;">
+        <img src="imagenes/MarcasQueTrabajamos.png" style="max-width: 100%; max-height: 500px;">
+        </div>
+        
+    </div>
+    <div class="contenido" id="slideShow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <div class="imgSlide" style="background-image: url(imagenes/Sistema%20tipo%20horno.jpg)">
+                    <div style="text-align:center; display: flex; justify-content: center; float: left;">
+                        <div class="text">Oven type heating devices</div>
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div></div>
+                
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <div class="imgSlide" style="background-image: url(imagenes//chiller.jpg)">
+                    <div style="text-align:center; display: flex; justify-content: center; float: left;">
+                        <div class="text">Chillers and cooling towers</div>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot active" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div></div>
+                
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <div class="imgSlide" style="background-image: url(imagenes/temperature-chamber.png)">
+                    <div style="text-align:center; display: flex; justify-content: center; float: left;">
+                        <div class="text">Thermocycles chamber</div>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot active" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <div class="imgSlide" style="background-image: url(imagenes/Cooling-chamber.png)">
+                    <div style="text-align:center; display: flex; justify-content: center; float: left;">
+                        <div class="text">Cooling room</div>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot active" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div id="footer">
+        <div class="contenido">
+            <div>
+                <ul class="seccionFooter" style="float: left;">
+                    <li style="list-style-type: none;"><b>Contact us</b></li>
+                    <li>(656) 617-1474</li>
+                    <li class=" letraCorreo2">enkor.multiservicios@gmail.com</li>
+                    <li>Juárez City, Chihuahua</li><br>
+                    <li style="list-style-type: none;"><b>Other languages</b></li>
+                    <li><a href="../" style="text-decoration-color: skyblue; color: skyblue">Español</a></li>
+                </ul>
+
+                <a href="Contact.html" style="text-decoration: none; color: black;"><button id="botonMensaje">Send us a message</button></a>
+
+                <ul class="seccionFooter">
+                    <li style="list-style-type: none;"><b>What do you want to see?</b></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="OurServices.html">Our services</a></li>
+                    <li><a href="PrivacyPolicy.html">Privacy policy</a></li>
+                    <li><a href="../PaginaExtra/Cuenta.php">Online Store</a></li>
+                </ul>
+            </div>
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left">2025 © ALL RIGHTS RESERVED BY ENKOR-TECH</p>
+            
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left; font-size: 8px;">Images of web site extracted from www.vecteezy.com, www.pixabay.com, www.freepik.es y www.flaticon.es</p>
+        </div>
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+        }
+        
+        function toggleMenu(){
+            var x = document.querySelectorAll(".elNav");
+            
+            if (x[0].classList.contains('invisibleCelular')) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove('invisibleCelular');
+                }
+            } else {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.add('invisibleCelular');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
