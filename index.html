@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ENKOR-TECH</title>
+    <link rel="canonical" href="https://enkortech.com" />
+    <meta name="ENKOR" content="Página oficial de empresa de refrigeración ENKOR-TECH">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="imagenes/iconos/logo%20icono.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNav" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-01.png"></a>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNavEscondido" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-02TR.png"></a>
+        <div id="divNav">
+            <div class="elNav invisibleCelular"><a href="QuienesSomos.html">Quiénes somos</a></div>
+            <div class="elNav invisibleCelular"><a href="NuestrosClientes.html">Nuestros clientes</a></div>
+            <div class="elNav invisibleCelular"><a href="NuestrosServicios.html">Nuestros servicios</a></div>
+            <div class="elNav invisibleCelular"><a href="Contacto.html">Contacto</a></div>
+            <div class="banderaIdioma"><div id="banderaTitulo">Idiomas</div><a href="#"><img src="imagenes/BanderaMexico.png"></a><a href="en/index.html"><img src="imagenes/BanderaUSA.png"></a></div>
+            <a onclick="toggleMenu()" id="elNavMenu"><img src="imagenes/iconos/BotonMenu.png"></a>
+        </div>
+    </nav>
+    <div id="seccionInicio">
+        <div id="msgBienvenida">
+            <h1>Servicio en refrigeración</h1>
+        </div>
+    </div>
+
+    <div class="contenido" style="margin-bottom: 30px;">
+        <h1 style="padding-top: 15px;">ENKOR-TECH</h1>
+        <h2>¿Qué hace ENKOR-TECH?</h2>
+
+        <p>
+            ENKOR-TECH es una empresa que realiza servicios a máquinas de refrigeración. Nuestro enfoque es el servicio de mantenimiento preventivo y correctivo a equipos de ciclos térmicos con sus diferentes variantes, tales como: Humedad, Altitud, Choque térmico, entre otros
+            <br><br>
+            ENKOR-TECH no solo se limita a lo descrito arriba, sino también realiza trabajo en control eléctrico. actualización de controladores de equipos y mejoras a su eficiencia en general.
+        </p>
+    </div>
+    <div class="biSecciones">
+        <div class="biSection colorInicio">
+            <img src="imagenes/Rapidez.jpg" class="imgHiddenSec">
+            <div>
+                <h2>Rapidez de respuesta</h2>
+                <p>Con varios miembros del equipo capaces y con opciones de transporte, podemos ofrecer un servicio al poco tiempo del contrato.
+                <br><br>
+                Además, ENKOR-TECH se asegura de mantener un tiempo de respuesta a los intentos de contacto corto, logrando completar acuerdos con clientes de manera sencilla y efectiva.</p>
+            </div>
+        </div>
+        <!--
+            
+        --><div class="biSection imgBiSection" style="background-image:url(imagenes/Rapidez.jpg);">
+            <div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="biSecciones">
+        <div class="biSection imgBiSection" style="background-image:url(imagenes/Calidad.jpg);">
+            <div>
+                <br>
+            </div>
+        </div>
+        <!--
+            
+        --><div class="biSection colorInicio">
+        <img src="imagenes/Calidad.jpg" class="imgHiddenSec">
+            <div>
+                <h2>Calidad de trabajo</h2>
+                <p>Nuestro equipo tiene alto nivel de preparación para realizar encargos tanto con maquinaria compleja como con herramientas de alta dificultad de uso.
+                <br><br>
+                Además, el contacto se matiene con un estatus profesional y limpio, haciendo cuidado de la reglamentación a cumplir y la limpieza general del trabajo.</p>
+            </div>
+        </div>
+    </div>
+    <div id="cuadroTextoMapa" class="mostrarTextoMapa">
+            <div style="width: 100%; height: auto;">
+            <h1 id="tituloTextoMapa">Presencia en México</h1>
+            <p id="parrafoTextoMapa">Nuestro taller y oficinas principales se encuentran en Ciudad Juárez, Chihuahua, los cuales nos permiten atender a clientes localmente, y en la zona norte del país.
+            <br><br>
+            Actualmente contamos con una bodega totalmente equipada en la ciudad de Querétaro y en la ciudad de México, permitiéndonos dar servicio de emergencia a la zona centro y sur del país.</p>
+            </div>
+        </div>
+    <div id="zonaMapaShow" class="mostrarZona">
+	<div>
+	<div style="display:flex; justify-content:center">
+        <div id="contenedorMapaDots" class="contenedorDotsMostrado">
+            <div id="espacioMapaDots" class="espacioDotsAchicado">
+                <div class="mapaDot" id="posSonora" onmouseover="mostrarTexto(1)"></div>
+                <div class="mapaDot" id="posBajaCalifornia" onmouseover="mostrarTexto(2)"></div>
+                <div class="mapaDot" id="posCoahuila" onmouseover="mostrarTexto(3)"></div>
+                <div class="mapaDot" id="posTamaulipas" onmouseover="mostrarTexto(4)"></div>
+                <div class="mapaDot" id="posQueretaro" onmouseover="mostrarTexto(5)"></div>
+                <br>
+		        <div class="mapaDot" id="posEstadoMexico" onmouseover="mostrarTexto(6)"></div>
+		        <div class="mapaDot" id="posNuevoLeon" onmouseover="mostrarTexto(7)"></div>
+		        <div class="mapaDot" id="posJalisco" onmouseover="mostrarTexto(8)"></div>
+                <div class="mapaDot" id="posJuarez" onmouseover="mostrarTexto(9)"></div>
+                <br>
+                <div class="mapaDot" id="posGeneral" onmouseover="mostrarTexto(10)"></div>
+            </div>
+        </div>
+	</div>
+	</div>
+    </div>
+    
+    <div class="contenido">
+
+        <p style="margin-top: 30px; margin-bottom: 30px;">
+            <em>ENKOR-TECH se enorgullece de su alta capacidad técnica. </em>
+            Gracias a esto, podemos presentar una enorme capacidad dentro del área de refrigeración y electromecánica. Contando con experiencia extensa y conocimiento de multiples técnicas de termodinámica, se nos presenta oportunidad de manejar una gran cantidad de maquinas de distintas especificaciones. Trabajar con nosotros es una opción que no puedes dejar pasar.
+        </p>
+        <div id="recuadroCapacidad">
+            <h1 style=" width: 100%; text-align: center;">Capacidad técnica</h1>
+
+            <div id="capacidadArea">
+                <div class="capacidadEx">
+                    <div class="imgCapacidades" style="background-image: url( imagenes/iconos/calentador.png)">
+                    </div>
+                    <div class="txtCapacidades">
+                        <p>Sistemas de calentamiento tipo horno con todas sus variantes, incluyendo simulación de altitud, humedad, curado de piezas manufacturadas, etc.</p>
+                    </div>
+                </div>
+                <div class="capacidadEx">
+                    <div class="imgCapacidades" style="background-image: url( imagenes/iconos/temperatura.png)">
+                    </div>
+                    <div class="txtCapacidades">
+                        <p>Equipos enfriadores de agua con refrigeración (chillers) y torres de enfriamiento.</p>
+                    </div>
+                </div>
+                <div class="capacidadEx">
+                    <div class="imgCapacidades" style="background-image: url( imagenes/iconos/unidad-exterior.png)">
+                    </div>
+                    <div class="txtCapacidades">
+                        <p>Unidades de refrigeración para clima (instalación, mantenimiento, entre otros).</p>
+                    </div>
+                </div>
+                <div class="capacidadEx">
+                    <div class="imgCapacidades" style="background-image: url( imagenes/iconos/cuarto-frio.png)">
+                    </div>
+                    <div class="txtCapacidades">
+                        <p>Equipos secadores de aire, humidificadores, cuartos fríos.</p>
+                    </div>
+                </div>
+                <div class="capacidadEx">
+                    <div class="imgCapacidades" style="background-image: url( imagenes/iconos/indicador.png)">
+                    </div>
+                    <div class="txtCapacidades">
+                        <p>Cámaras de temperatura con sistemas de refrigeración en cascada (para ciclos de temperatura y termal-shock, todas las marcas que existen en el mercado).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="secServicios">
+        <div class="contenido">
+            <h1>Servicios</h1>
+            <div id="contImgBigServ">
+                <img src="imagenes/Agachado%20arreglando.jpeg" id="imgBigServicios">
+            </div>
+
+            <div id="zonaTextoServicios">
+                <h1 style="margin-left: 20px; color: white">Servicios</h1>
+                
+                <a href="NuestrosServicios.html#mantenimientoCorrectivo" class="servicioEx">
+                    <img class="imgSmallServicios" src="imagenes/iconos/llave-inglesa%20blanca.png">
+                    <h4 class="tituloServicio">Mantenimiento correctivo de sistemas</h4>
+                </a>
+                <a href="NuestrosServicios.html#mantenimientoPreventivo" class="servicioEx">
+                    <img class="imgSmallServicios" src="imagenes/iconos/Mantenimiento%20blanca.png">
+                    <h4 class="tituloServicio">Mantenimiento preventivo de sistemas</h4>
+                </a>
+                <a href="NuestrosServicios.html#instalaciones" class="servicioEx">
+                    <img class="imgSmallServicios" src="imagenes/iconos/control-de-temperatura%20blanco.png">
+                    <h4 class="tituloServicio">Instalaciones eléctricas, neumáticas, hidráulicas</h4>
+                </a>
+                <a href="NuestrosServicios.html#disenoControl" class="servicioEx">
+                    <img class="imgSmallServicios" src="imagenes/iconos/panel-electrico%20blanco.png">
+                    <h4 class="tituloServicio">Diseño de control eléctrico</h4>
+                </a>
+                <a href="NuestrosServicios.html#actualizacionControladores" class="servicioEx">
+                    <img class="imgSmallServicios" src="imagenes/iconos/panel-de-administrador%20blanco.png">
+                    <h4 class="tituloServicio">Actualización de controladores</h4>
+                </a>
+                <a href="NuestrosServicios.html#ventaPartes" class="servicioEx">
+                    <img class="imgSmallServicios" src="imagenes/iconos/motor-del-motor%20blanco.png">
+                    <h4 class="tituloServicio">Venta y remplazo de partes de refrigeración</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="contenido">
+            <div>
+                <ul class="seccionFooter" style="float: left;">
+                    <li style="list-style-type: none;"><b>Contáctanos</b></li>
+                    <li>(656) 617-1474</li>
+                    <li class=" letraCorreo2">enkor.multiservicios@gmail.com</li>
+                    <li>Ciudad Juárez, Chihuahua</li><br>
+                    <li style="list-style-type: none;"><b>Otros idiomas</b></li>
+                    <li><a href="en/" style="text-decoration-color: skyblue; color: skyblue">English</a></li>
+                </ul>
+
+                <a href="Contacto.html" style="text-decoration: none; color: black;"><button id="botonMensaje">Envíanos un mensaje</button></a>
+
+                <ul class="seccionFooter">
+                    <li style="list-style-type: none;"><b>Sobre Nosotros</b></li>
+                    <li><a href="QuienesSomos.html">¿Quiénes somos?</a></li>
+                    <li><a href="NuestrosClientes.html">Nuestros clientes</a></li>
+                    <li><a href="NuestrosServicios.html">Nuestros servicios</a></li>
+                    <li><a href="AvisoPrivacidad.html">Aviso de privacidad</a></li>
+                    <li><a href="PaginaExtra/Cuenta.php">Tienda Online</a></li>
+                </ul>
+            </div>
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left"> 2025 © TODOS LOS DERECHOS RESERVADOS POR ENKOR-TECH</p>
+            
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left; font-size: 8px;">Imágenes del sitio web extraidas de www.vecteezy.com, www.pixabay.com, www.freepik.es y www.flaticon.es</p>
+        </div>
+    </div>
+    
+    <script>
+        var mapaTextoActual = 0;
+        function toggleMenu(){
+            var x = document.querySelectorAll(".elNav");
+            
+            if (x[0].classList.contains('invisibleCelular')) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove('invisibleCelular');
+                }
+            } else {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.add('invisibleCelular');
+                }
+            }
+        }
+        
+        function showMapa(){
+            var x = document.getElementById("zonaMapaShow");
+            var y = document.getElementById("zonaMapaHide");
+            var z = document.getElementById("cuadroTextoMapa");
+	    var w = document.getElementById("contenedorMapaDots");
+            
+            if (x.classList.contains('esconderZona')) {
+                x.classList.remove('esconderZona');
+                x.classList.add('mostrandoZona');
+		        w.classList.remove('contenedorDotsEscondido');
+                w.classList.add('contenedorDotsMostrado');
+		        z.classList.add('mostrarTextoMapa');
+                z.classList.remove('esconderTextoMapa');
+                mostrarTexto(10);
+            } else {
+                x.classList.add('esconderZona');
+                x.classList.remove('mostrandoZona');
+		w.classList.remove('contenedorDotsMostrado');
+                w.classList.add('contenedorDotsEscondido');
+                mapaTextoActual = 0;
+                z.classList.remove('mostrarTextoMapa');
+                z.classList.add('esconderTextoMapa');
+            }
+            
+            if (y.classList.contains('esconderSection')) {
+                y.classList.remove('esconderSection');
+                y.classList.add('mostrandoSection');
+            } else {
+                y.classList.add('esconderSection');
+                y.classList.remove('mostrandoSection');
+            }
+        }
+        
+        function mostrarTexto(n){
+            var y1 = document.getElementById("tituloTextoMapa");
+            var y2 = document.getElementById("parrafoTextoMapa");
+	        var w = document.getElementById("espacioMapaDots");
+            let dots = document.getElementsByClassName("mapaDot");
+            
+            for (i = 0; i < dots.length; i++) {
+                if(dots[i].classList.contains('mapaDotActivo')){
+                    dots[i].classList.remove('mapaDotActivo');
+                }
+            }
+            
+            dots[n - 1].classList.add('mapaDotActivo');
+            
+            if (n != mapaTextoActual){
+                
+                switch(n){
+                    case 1:
+                        y1.innerHTML = "Sonora";
+                        y2.innerHTML = "Nuestros clientes:<br><ul><li>Amphenol Optimize</li></ul>";
+                        break;
+		            case 2:
+                        y1.innerHTML = "Baja California";
+                        y2.innerHTML = "Nuestros clientes:<br><ul><li>Dialight de México</li><li>Eaton Controls and Power Conversion</li><li>Honeywell Aerospace</li><li>Medtronic</li><li>ICU Medical</li><li>Samsung.</li></ul>";
+                        break;
+		            case 3:
+                        y1.innerHTML = "Coahuila";
+                        y2.innerHTML = "Nuestros clientes:<br><ul><li>Saint Gobain</li><li>Motus Integrated Systems</li></ul>";
+                        break;
+		            case 4:
+                        y1.innerHTML = "Tamaulipas";
+                        y2.innerHTML = "Nuestros clientes:<br><ul><li>Autoliv</li></ul>";
+                        break;
+		            case 5:
+                        y1.innerHTML = "Querétaro";
+                        y2.innerHTML = "Nuestros clientes:<br><ul><li>Autoliv</li></ul>";
+                        break;
+		            case 6:
+                        y1.innerHTML = "Estado de México";
+                        y2.innerHTML = "Nuestros clientes:<br><ul><li>Autoliv</li><li>Fresenious</li></ul>";
+                        break;
+		            case 7:
+                        y1.innerHTML = "Nuevo León";
+                        y2.innerHTML = "Nuestros clientes:<br><ul><li>Arca-Continental</li><li>Schneider electric</li></ul>";
+                        break;
+		            case 8:
+                        y1.innerHTML = "Jalisco";
+                        y2.innerHTML = "Nuestros clientes:<br><ul><li>Sanmina</li></ul>";
+                        break;
+                    case 9:
+                        y1.innerHTML = "Ciudad Juárez";
+                        y2.innerHTML = "Empresas locales:<br><ul><li>Marelli Automotive Lighting</li><li>Bosch</li><li>Continental / Vitesco</li><li>Ethicon</li><li>Honeywell</li><li>Flextronics</li><li>TECMA Boyd Corp.</li><li>Keytronic</li><li>Foxconn / Scientific Atlanta</li><li>Nidec</li><li>Neotech / Epi de México</li><li>Delphi / Borgwarner Systems</li><li>Strattec</li><li>Lexmark Internacional</li><li>Keno Industries</li><li>Optron de México</li><li>Kyocera AVX</li><li>Inteva México</li><li>Electrorika</li><li>Industrias Sicomoro</li><li>Intermatic</li><li>Hanon Systems</li><li>BRP</li><li>Phinia</li><li>CBRE</li></ul>";
+                        break;
+                    default:
+                        y1.innerHTML = "Presencia en México";
+                        y2.innerHTML = "Nuestro taller y oficinas principales se encuentran en Ciudad Juárez, Chihuahua, los cuales nos permiten atender a clientes localmente, y en la zona norte del país.<br><br>Actualmente contamos con una bodega totalmente equipada en la ciudad de Querétaro y en la ciudad de México, permitiéndonos dar servicio de emergencia a la zona centro y sur del país.";
+                        break;
+                }
+                mapaTextoActual = n;
+            } else{
+                /*mapaTextoActual = 0;*/
+            }
+            
+        }
+        
+    </script>
+</body>
+
+</html>

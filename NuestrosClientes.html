@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ENKOR-TECH</title>
+    <meta name="ENKOR" content="Página oficial de empresa de refrigeración ENKOR-TECH">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="imagenes/iconos/logo%20icono.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNav" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-01.png"></a>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNavEscondido" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-02TR.png"></a>
+        <div id="divNav">
+            <div class="elNav invisibleCelular"><a href="QuienesSomos.html">Quiénes somos</a></div>
+            <div class="elNav invisibleCelular" id="elNavActivo"><a href="NuestrosClientes.html">Nuestros clientes</a></div>
+            <div class="elNav invisibleCelular"><a href="NuestrosServicios.html">Nuestros servicios</a></div>
+            <div class="elNav invisibleCelular"><a href="Contacto.html">Contacto</a></div>
+            <div class="banderaIdioma"><div id="banderaTitulo">Idiomas</div><a href="#"><img src="imagenes/BanderaMexico.png"></a><a href="en/OurClients.html"><img src="imagenes/BanderaUSA.png"></a></div>
+            <a onclick="toggleMenu()" id="elNavMenu"><img src="imagenes/iconos/BotonMenu.png"></a>
+        </div>
+    </nav>
+    <div class="contenido" style="margin-bottom: 30px;">
+        <h1 style="text-align: center; padding-top: 15px;">Nuestros clientes</h1>
+        <p style="text-align: center">
+            ENKOR-TECH ha trabajado con más de 20 empresas para realizar servicios en sistemas de refrigeración a lo largo de todo el país.
+        </p>
+        <p style="text-align: center">
+            Nuestros clientes, los cuales tienen locación en localidades como Tijuana, Mexicali, Querétaro y Guadalajara, utilizan distintas marcas de maquinaria en refrigeración de las cuales nuestros empleados están capacitados para manejar. Aquí podemos observar un gran grupo de las marcas que nuestros clientes comúnmente utilizan:
+        </p>
+        <div style="width: 100%; display: flex; justify-content: center;">
+        <img src="imagenes/MarcasQueTrabajamos.png" style="max-width: 100%; max-height: 500px;">
+        </div>
+        
+    </div>
+    <div class="contenido" id="slideShow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <div class="imgSlide" style="background-image: url(imagenes/Sistema%20tipo%20horno.jpg)">
+                    <div style="text-align:center; display: flex; justify-content: center; float: left;">
+                        <div class="text">Sistemas de calentamiento tipo horno</div>
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div></div>
+                
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <div class="imgSlide" style="background-image: url(imagenes//chiller.jpg)">
+                    <div style="text-align:center; display: flex; justify-content: center; float: left;">
+                        <div class="text">Chillers y torres de enfriamiento</div>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot active" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div></div>
+                
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <div class="imgSlide" style="background-image: url(imagenes/temperature-chamber.png)">
+                    <div style="text-align:center; display: flex; justify-content: center; float: left;">
+                        <div class="text">Camaras de thermociclos</div>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot active" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <div class="imgSlide" style="background-image: url(imagenes/Cooling-chamber.png)">
+                    <div style="text-align:center; display: flex; justify-content: center; float: left;">
+                        <div class="text">Cuartos fríos</div>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot active" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div id="footer">
+        <div class="contenido">
+            <div>
+                <ul class="seccionFooter" style="float: left;">
+                    <li style="list-style-type: none;"><b>Contáctanos</b></li>
+                    <li>(656) 617-1474</li>
+                    <li class=" letraCorreo2">enkor.multiservicios@gmail.com</li>
+                    <li>Ciudad Juárez, Chihuahua</li><br>
+                    <li style="list-style-type: none;"><b>Otros idiomas</b></li>
+                    <li><a href="en/" style="text-decoration-color: skyblue; color: skyblue">English</a></li>
+                </ul>
+
+                <a href="Contacto.html" style="text-decoration: none; color: black;"><button id="botonMensaje">Envíanos un mensaje</button></a>
+
+                <ul class="seccionFooter">
+                    <li style="list-style-type: none;"><b>Sobre Nosotros</b></li>
+                    <li><a href="QuienesSomos.html">¿Quiénes somos?</a></li>
+                    <li><a href="NuestrosServicios.html">Nuestros servicios</a></li>
+                    <li><a href="AvisoPrivacidad.html">Aviso de privacidad</a></li>
+                    <li><a href="PaginaExtra/Cuenta.php">Tienda Online</a></li>
+                </ul>
+            </div>
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left"> 2025 © TODOS LOS DERECHOS RESERVADOS POR ENKOR-TECH</p>
+            
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left; font-size: 8px;">Imágenes del sitio web extraidas de www.vecteezy.com, www.pixabay.com, www.freepik.es y www.flaticon.es</p>
+        </div>
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+        }
+        
+        function toggleMenu(){
+            var x = document.querySelectorAll(".elNav");
+            
+            if (x[0].classList.contains('invisibleCelular')) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove('invisibleCelular');
+                }
+            } else {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.add('invisibleCelular');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

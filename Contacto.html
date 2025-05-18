@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ENKOR-TECH</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta name="ENKOR" content="Página oficial de empresa de refrigeración ENKOR-TECH">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="imagenes/iconos/logo%20icono.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNav" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-01.png"></a>
+        <a href="index.html" style="float: left; width: 200px;"><img id="logoNavEscondido" src="imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-02TR.png"></a>
+        <div id="divNav">
+            <div class="elNav invisibleCelular"><a href="QuienesSomos.html">Quiénes somos</a></div>
+            <div class="elNav invisibleCelular"><a href="NuestrosClientes.html">Nuestros clientes</a></div>
+            <div class="elNav invisibleCelular"><a href="NuestrosServicios.html">Nuestros servicios</a></div>
+            <div class="elNav invisibleCelular" id="elNavActivo"><a href="Contacto.html">Contacto</a></div>
+            <div class="banderaIdioma"><div id="banderaTitulo">Idiomas</div><a href="#"><img src="imagenes/BanderaMexico.png"></a><a href="en/Contact.html"><img src="imagenes/BanderaUSA.png"></a></div>
+            <a onclick="toggleMenu()" id="elNavMenu"><img src="imagenes/iconos/BotonMenu.png"></a>
+        </div>
+    </nav>
+    <div id="fondoContacto">
+    <h1 style="width: 100%; text-align: center">Contáctanos</h1>
+    <div class="contenido" id="zonaContacto">
+        <form id="contactoForm" method="post" action="enviarCorreo.php">
+            <div id="contFormText">
+                <div>
+                    <section>
+                        <label for="firstname">Nombre: </label>
+                        <input id="inptNombre" type="text" name="firstname" class="formIntroducir"  required oninvalid="this.setCustomValidity('Este no es un texto aceptable')" oninput="this.setCustomValidity('')" title="Favor de introducir un texto" pattern="[a-zA-Z ]+" maxlength="25">
+                    </section>
+                    <section>
+                        <label for="lastname">Apellido: </label>
+                        <input id="inptApellido" type="text" name="lastname" class="formIntroducir"  required oninvalid="this.setCustomValidity('Este no es un texto aceptable')" oninput="this.setCustomValidity('')" title="Favor de introducir un texto" pattern="[a-zA-Z ]+" maxlength="25">
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <label for="email">Correo: </label>
+                        <input type="email" name="email" class="formIntroducir"  required oninvalid="this.setCustomValidity('Correo debe seguir formato ejemplo@correo.com')" oninput="this.setCustomValidity('')" title="Favor de introducir un texto" maxlength="50">
+                    </section>
+                    <section>
+                        <label for="phone">Teléfono: </label>
+                        <input id="inptPhone" type="phone" name="phone" class="formIntroducir" oninvalid="this.setCustomValidity('Este no es un texto aceptable')" oninput="this.setCustomValidity('')" title="Favor de introducir un texto" pattern="[0-9]+" maxlength="13">
+                    </section>
+                </div>
+                <div>
+                    <section style="width: 100%;">
+                        <label for="message">Mensaje: </label>
+                        <textarea name="message" rows="7" class="formIntroducir" style="width: 95%;" required oninvalid="this.setCustomValidity('Favor de introducir un mensaje aceptable')" oninput="this.setCustomValidity('')" title="Favor de introducir un texto" maxlength="500"></textarea>
+                    </section>
+                </div>
+                <div style="float: left" class="g-recaptcha" data-sitekey="6LfPZjcrAAAAAJWfey3CpdygIBoFPqNbtPdhRptR" data-callback="enableSubmitBtn"></div>
+                <div><button id="mySubmitButton" disabled="disabled">Enviar</button></div>
+                
+            </div>
+            <div id="contFormImg" style="background-image: url(imagenes/logos/ENKOR-TECH-LOGOTIPODIGITAL-01.png)"></div>
+        </form>
+    </div>
+    </div>
+    <div class="biSecciones">
+        <div class="biSection imgBiSection colorQuienes tituloContacto">
+            <h1 style="color: white">O utiliza nuestra información de contacto</h1>
+        </div>
+        <div class="biSection colorQuienes seccionMod" style="outline-style: none;">
+            <div class="imgHiddenSec modContactoHidden"><h1 style="color: white">O utiliza nuestra información de contacto</h1></div>
+            <div>
+                <div class="servicioEx modContacto">
+                    <img class="imgSmallServicios" src="imagenes/iconos/Telefono%20blanco.png">
+                    <h3 class="tituloServicio">(656) 617-1474</h3>
+                </div>
+                <div class="servicioEx modContacto">
+                    <img class="imgSmallServicios" src="imagenes/iconos/Correo%20blanco.png">
+                    <h4 class="tituloServicio letraCorreo">servicio@enkortech.com</h4>
+                </div>
+                <div class="servicioEx modContacto">
+                    <img class="imgSmallServicios" src="imagenes/iconos/Correo%20blanco.png">
+                    <h4 class="tituloServicio letraCorreo">enkor.multiservicios@gmail.com</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="contenido">
+            <div>
+                <ul class="seccionFooter" style="float: left;">
+                    <li style="list-style-type: none;"><b>Contáctanos</b></li>
+                    <li>(656) 617-1474</li>
+                    <li class=" letraCorreo2">enkor.multiservicios@gmail.com</li>
+                    <li>Ciudad Juárez, Chihuahua</li><br>
+                    <li style="list-style-type: none;"><b>Otros idiomas</b></li>
+                    <li><a href="en/" style="text-decoration-color: skyblue; color: skyblue">English</a></li>
+                </ul>
+
+                <a href="Contacto.html" style="text-decoration: none; color: black;"><button id="botonMensaje">Envíanos un mensaje</button></a>
+
+                <ul class="seccionFooter">
+                    <li style="list-style-type: none;"><b>Sobre Nosotros</b></li>
+                    <li><a href="QuienesSomos.html">¿Quiénes somos?</a></li>
+                    <li><a href="NuestrosClientes.html">Nuestros clientes</a></li>
+                    <li><a href="NuestrosServicios.html">Nuestros servicios</a></li>
+                    <li><a href="AvisoPrivacidad.html">Aviso de privacidad</a></li>
+                    <li><a href="PaginaExtra/Cuenta.php">Tienda Online</a></li>
+                </ul>
+            </div>
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left"> 2025 © TODOS LOS DERECHOS RESERVADOS POR ENKOR-TECH</p>
+            
+            <p style="text-align: center; position: relative; bottom: -20px; width: 100%; float: left; font-size: 8px;">Imágenes del sitio web extraidas de www.vecteezy.com, www.pixabay.com, www.freepik.es y www.flaticon.es</p>
+        </div>
+    </div>
+    
+    <script>
+        ////////////// Numeros de telefono /////////////////////////
+        const inptPhone = document.getElementById("inptPhone");
+        inptPhone.addEventListener("keydown", (e)=>{
+            const expre = /[0-9+]/;
+            const teclasPermitidas = ["Backspace", "ArrowLeft", "ArrowRight", "Delete"];
+            if (!teclasPermitidas.includes(e.key) && !expre.test(e.key)) e.preventDefault();
+        })
+        
+        ////////////////// Nombre y apellido /////////////////////////
+        
+        const inptNombre = document.getElementById("inptNombre");
+        inptNombre.addEventListener("keydown", (e)=>{
+            const expre = /[a-zA-Z]/;
+            const teclasPermitidas = ["Backspace", "ArrowLeft", "ArrowRight", "Delete", " "];
+            if (!teclasPermitidas.includes(e.key) && !expre.test(e.key)) e.preventDefault();
+        })
+        
+        const inptApellido = document.getElementById("inptApellido");
+        inptApellido.addEventListener("keydown", (e)=>{
+            const expre = /[a-zA-Z]/;
+            const teclasPermitidas = ["Backspace", "ArrowLeft", "ArrowRight", "Delete", " "];
+            if (!teclasPermitidas.includes(e.key) && !expre.test(e.key)) e.preventDefault();
+        })
+        
+        //////////////////// Mensaje //////////////////////
+        
+        // Me gustaria tenerlo, pero ya que es un textarea y no un input no se pueden limitar los caracteres. Tendria que revisar opciones
+        //////////////////////////////////////////////////////////////////////////
+        
+        function toggleMenu(){
+            var x = document.querySelectorAll(".elNav");
+            
+            if (x[0].classList.contains('invisibleCelular')) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove('invisibleCelular');
+                }
+            } else {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.add('invisibleCelular');
+                }
+            }
+        }
+        
+        function enableSubmitBtn(){
+            document.getElementById("mySubmitButton").disabled = false;
+        }
+        
+    </script>
+    
+</body>
+
+</html>
